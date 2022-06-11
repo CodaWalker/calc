@@ -1,0 +1,42 @@
+### Сложение +25 = 25
+POST http://localhost:9000/plus
+Content-Type: application/json
+
+{
+  "value": 25,
+  "userId": 1
+}
+
+### Вычитание -5 = 20
+POST http://localhost:9000/minus
+Content-Type: application/json
+
+{
+  "value": 5,
+  "userId": 1
+}
+
+### Деление /2 = 10
+POST http://localhost:9000/div
+Content-Type: application/json
+
+{
+  "value": 2,
+  "userId": 1
+}
+
+### Умножение *5 = 100
+POST http://localhost:9000/multi
+Content-Type: application/json
+
+{
+  "value": 5,
+  "userId": 1
+}
+
+### Результат значения = 100
+GET http://localhost:9000/equals
+Content-Type: application/json
+
+### Очистка значения = 0
+GET http://localhost:9000/clear
